@@ -1,9 +1,9 @@
 ### AIGC Artificial Intelligence Generated Code
 
-week=
-cookie=
-userId= 
-xnxq=  # semester
+week= ""
+cookie= ""
+userId= ""
+xnxq= "" # semester
 
 import requests
 from datetime import timezone,datetime,timedelta
@@ -20,7 +20,7 @@ headers = {
 data = requests.get(url, headers=headers)
 data_dict = data.json()
 
-START_DATE = datetime(2025, 9, 1)
+START_DATE = datetime(2025+int(xnxq[:4]), 9, 1)
 
 calendar_header = """BEGIN:VCALENDAR
 VERSION:2.0
