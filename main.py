@@ -95,7 +95,7 @@ grouped = defaultdict(list)
 for item in kckb_data:
     course_name = item.get("kcmc", "")
     location = item.get("croommc", "")
-    instructor = item.get("jsmc", "")
+    instructor = item.get("tmc", "")
     xingqi = int(item.get("xingqi") or 1)
     djc = int(item.get("djc") or 1)
     key = (course_name, location, instructor, xingqi, week)
