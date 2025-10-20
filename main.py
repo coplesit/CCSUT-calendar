@@ -11,7 +11,7 @@ import json
 from collections import defaultdict
 import uuid
 
-url = f"https://tls.ccsut.cn/admin/api/getXskb?xnxq=&userId={userId}&xqid=&week={week}&role=xs"
+url = f"https://tls.ccsut.cn/admin/api/getXskb?xnxq={xnxq}&userId={userId}&xqid=&week={week}&role=xs"
 
 headers = {
   'Cookie': f"{cookie}]"
